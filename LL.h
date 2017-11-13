@@ -36,7 +36,7 @@ nptr addm(nptr h,int data,int pos);
 
 void display(nptr h)
 {
-    /* A function to display the LinkList.*/
+    /* A function to display the Linked List.*/
     nptr t;
     printf("\n\t\t");
     for(t=h;t!=NULL;t=t->r)
@@ -47,11 +47,11 @@ void display(nptr h)
 //----------------------------------------------
  void show(nptr h)
  {
-    /* A function to display the LinkList
+    /* A function to display the Linked List
        as the way it is.*/
      nptr d;
      int i,j,l,n;
-     printf("Here is your link list--->\n\t");
+     printf("Here is your linked list--->\n\t");
      for(d=h;d->r!=NULL;d=d->r)
      {
          j=findlen(d->data);
@@ -94,7 +94,7 @@ void display(nptr h)
 
 int findlen(int j)
  {
-     /* A function to find length of the LinkList*/
+     /* A function to find length of the Linked List*/
      int i=0;
      do
      {
@@ -107,7 +107,7 @@ int findlen(int j)
 //---------------------------------------------
 nptr create()
 {
-    /*A function to create a single Link List*/
+    /*A function to create a single Linked List*/
     nptr h=NULL,n,t;
     int d;
     while(2)
@@ -131,16 +131,16 @@ nptr create()
             t=n;
         }
     }
-    //return h;
+    return h;
 }
 //----------------------------------------------
 
 nptr addnode(nptr h)
 {
-    /*A function to add data to the Link List */
+    /*A function to add data to the Linked List */
     int pos,data,len;
     nptr k;
-    printf("\nPlease enter the data you want to add to the link list::");
+    printf("\nPlease enter the data you want to add to the linked list::");
     scanf("%d",&data);
     for(k=h,len=1;k!=NULL;len++,k=k->r);
 
@@ -172,7 +172,7 @@ nptr addnode(nptr h)
 //---------------------------------------------
 nptr addh(nptr h,int data)
 {
-    /*A function to add data at the beginning*/
+    /*A function to add data at the beginning of the Linked List*/
     nptr d=make;
     d->data=data;
     d->r=h;
@@ -182,7 +182,7 @@ nptr addh(nptr h,int data)
 //---------------------------------------------
 nptr addl(nptr h,int data)
 {
-    /*A function to add data at the end of the Link List*/
+    /*A function to add data at the end of the Linked List*/
     nptr d=make,t;
     for(t=h;t->r!=NULL;t=t->r);
     d->data=data;
