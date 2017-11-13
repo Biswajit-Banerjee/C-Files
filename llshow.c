@@ -4,10 +4,10 @@
      nptr h;
      int c;
      printf("\t\t\tWELCOME\n");
-     h=creat();
-     while(5)
+     h=create();
+     while(42)
      {
-         printf("\n0.Exit\n1.View Link List\n2.Add Value\n3.Clear Screen\nEnter your choice::");
+         printf("\n0.Exit\n1.View Linked List\n2.Add Value\n3.Clear Screen\nEnter your choice::");
          scanf("%d",&c);
          switch(c)
          {
