@@ -14,7 +14,7 @@
 struct node
 {
     /* A structure containing the integer type data,
-       a pointer of type node (which is a structure*/
+       a pointer of type node (which is a structure)*/
     int data;
     struct node * r;
 };
