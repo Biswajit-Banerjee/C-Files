@@ -27,7 +27,7 @@ typedef struct node* nptr;
 void display(nptr h);
 void show(nptr h);
 int findlen(int j);
-nptr creat();
+nptr create();
 nptr addnode(nptr h);
 nptr addh(nptr h,int data);
 nptr addl(nptr h,int data);
